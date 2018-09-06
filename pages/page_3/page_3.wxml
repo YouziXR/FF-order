@@ -1,0 +1,37 @@
+<!--pages/page_3/page_3.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__hd">
+
+    <view class='d_name_style'>
+      <text>{{d_name}}</text>
+    </view>
+  </view>
+
+  <form bindsubmit='openConfirm'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">点餐数量:</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type='number' name="order_count" value='{{count}}' />
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea name="remarks" maxlength='120' rows="3" class="weui-textarea" placeholder="备注：提提你的小要求（写了也没用）" style="height: 3.3em" value='{{remarks}}' />
+
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page__interval" />
+    <view class="page__bd page__bd_spacing">
+      <view class="button-sp-area">
+        <button class="weui-btn" type="primary" plain="true" formType="submit">提交</button>
+      </view>
+    </view>
+  </form>
+</view>

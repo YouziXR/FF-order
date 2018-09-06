@@ -1,0 +1,36 @@
+/**index.wxss**/
+page{
+  /* background-image: url('') */
+  /* background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535515162733&di=936bd548884ecb3b7d3aca7166e025e0&imgtype=0&src=http%3A%2F%2Fimg.jrzj.com%2Fuploadfile%2F2016%2F1228%2F20161228045439998.jpg'); */
+  background-size: contain;
+}
+.page-index {
+  padding: 40% 0;
+  
+}
+.log-in {
+  width: 80%;
+}
+.login-btn {
+  width: 50%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

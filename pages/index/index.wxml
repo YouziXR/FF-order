@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container page-index">
+
+
+  <view class="weui-cells weui-cells_after-title log-in">
+   <!-- <label>User</label>  -->
+   <view class="weui-cell weui-cell_input">
+   <view class="weui-label">用户名</view>
+    <input type='text' placeholder='User' focus='true' bindinput='nameInput' class="weui-input"></input>
+   </view>
+  
+   <!-- <label>Password</label>  -->
+   <view class="weui-cell weui-cell_input">
+   <view class="weui-label">密码</view>
+    <input password='true' type='text' placeholder='Password' bindinput='pwdInput' class="weui-input"></input>
+   </view>
+  </view>
+  <button bindtap='logIn' class="weui-btn login-btn" type="primary">Log in</button>
+
+
+
+</view>

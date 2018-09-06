@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/department/department",
+    "pages/employee/employee",
+    "pages/admin/admin",
+    "pages/page_2/page_2",
+    "pages/page_3/page_3",
+    "pages/page_1/page_1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

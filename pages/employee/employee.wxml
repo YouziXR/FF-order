@@ -1,0 +1,8 @@
+<!--pages/employee/employee.wxml-->
+<!-- <text>pages/employee/employee.wxml</text> -->
+
+<view class='container'>
+  <view wx:for="{{employees}}" >
+    {{index}}: {{item.name}}  
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/page_2/page_2.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <view class="page__hd">
+    <view class='d_name_style'>
+      <text>{{reserve_type}}</text>
+    </view>
+  </view>
+
+  <block wx:for="{{departments}}" wx:for-item="department" wx:key="d_id">
+
+    <view class="page__bd page__bd_spacing">
+
+      <button class="weui-btn" type="primary" data-remarks="{{department.description}}" data-d_id="{{department.d_id}}" data-d_name="{{department.d_name}}" data-count="{{department.count}}" bindtap="order_detail">{{department.d_name}}已订餐 {{department.count}}份</button>
+
+    </view>
+
+  </block>
+   <view class="page__interval" />
+    <view class="page__bd page__bd_spacing">
+      <view class="button-sp-area">
+        <button class="weui-btn" type="primary" plain="true" bindtap='chosse_other'>继续订其他时间餐</button>
+      </view>
+    </view>
+
+</view>

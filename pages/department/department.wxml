@@ -1,0 +1,25 @@
+<!--pages/department/department.wxml-->
+<!-- <text>pages/department/department.wxml</text> -->
+
+<view class='container'>
+  <!-- {{ msg }} -->
+
+  <!-- <button bindtap='itDepart'>IT部</button>
+  <button bindtap='personnelDepart'>人事部</button>
+  <button bindtap='adminDepart'>行政部</button> -->
+<!-- button形式选择部门后跳转页面方案 -->
+  <!-- <block wx:for="{{departments}}" wx:key='id' >
+    <button >{{item.name}}</button>
+  </block> -->
+
+<!-- picker形式选择部门后添加人员 -->
+<view class="section">
+  <view class="section__title">普通选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{departments}}">
+    <view class="picker">
+      当前选择：{{departments[index]}}
+    </view>
+  </picker>
+</view>
+
+</view>
